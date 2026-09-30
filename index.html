@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banchy OS — Arch Linux, refined.</title>
+<meta name="description" content="Banchy OS is an independent, Arch Linux based rolling-release desktop distribution. Fast, minimal, beautiful, customizable, stable and developer friendly.">
+<meta name="theme-color" content="#0B0F14">
+<meta property="og:title" content="Banchy OS — Arch Linux, refined.">
+<meta property="og:description" content="An independent, Arch Linux based rolling-release desktop distribution. Fast. Minimal. Beautiful. Stable.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main" data-en="Skip to content" data-ru="Перейти к содержимому">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="container header__inner">
+    <a class="brand" href="#top" aria-label="Banchy OS home">
+      <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#6C8CFF"/>
+            <stop offset="100%" stop-color="#46D6C6"/>
+          </linearGradient>
+        </defs>
+        <rect x="0.75" y="0.75" width="22.5" height="22.5" rx="6.5" fill="#111820" stroke="#243040" stroke-width="1.5"/>
+        <rect x="5.5" y="4.4" width="2" height="15.2" rx="1" fill="#E6EDF3"/>
+        <path d="M7.5 5.4H14.3A2.8 2.8 0 0 1 14.3 11H7.5" fill="none" stroke="url(#brandGrad)" stroke-width="2"/>
+        <path d="M7.5 13H14.7A2.8 2.8 0 0 1 14.7 18.6H7.5" fill="none" stroke="url(#brandGrad)" stroke-width="2"/>
+      </svg>
+      <span class="brand__name">Banchy<span class="brand__accent">OS</span></span>
+    </a>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="#features" data-en="Features" data-ru="Возможности">Features</a>
+      <a href="#themes" data-en="Themes" data-ru="Темы">Themes</a>
+      <a href="#download" data-en="Download" data-ru="Скачать">Download</a>
+      <a href="https://github.com/pinkyguy2323/banchy-os/tree/main/docs" target="_blank" rel="noopener" data-en="Docs" data-ru="Документация">Docs</a>
+      <a href="https://github.com/pinkyguy2323/banchy-os" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+
+    <div class="header__actions">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+        <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+      </div>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div class="hero__copy reveal">
+      <span class="eyebrow" data-en="Independent · Rolling release · Arch based" data-ru="Независимый · Скользящий релиз · На базе Arch">Independent · Rolling release · Arch based</span>
+      <h1 data-en="Arch Linux, refined." data-ru="Arch Linux, отточенный.">Arch Linux, refined.</h1>
+      <p class="hero__sub" data-en="Banchy OS is an independent desktop distribution built on Arch Linux. Fast. Minimal. Beautiful. Customizable. Stable. Developer friendly." data-ru="Banchy OS — независимый настольный дистрибутив на базе Arch Linux. Быстрый. Минималистичный. Красивый. Настраиваемый. Стабильный. Дружелюбный к разработчикам.">Banchy OS is an independent desktop distribution built on Arch Linux. Fast. Minimal. Beautiful. Customizable. Stable. Developer friendly.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#download" data-en="Download ISO" data-ru="Скачать ISO">Download ISO</a>
+        <a class="btn btn--ghost" href="https://github.com/pinkyguy2323/banchy-os" target="_blank" rel="noopener" data-en="View on GitHub" data-ru="Смотреть на GitHub">View on GitHub</a>
+      </div>
+      <p class="hero__note" data-en="Not a fork or a reskin — its own architecture, design, CLI, theme engine, boot system and installer." data-ru="Не форк и не перекраска — собственная архитектура, дизайн, CLI, движок тем, загрузчик и установщик.">Not a fork or a reskin — its own architecture, design, CLI, theme engine, boot system and installer.</p>
+    </div>
+
+    <div class="hero__term reveal" data-delay="120">
+      <div class="term">
+        <div class="term__bar">
+          <span class="term__dot"></span><span class="term__dot"></span><span class="term__dot"></span>
+          <span class="term__title">kitty — banchy</span>
+        </div>
+        <div class="term__body">
+          <p><span class="t-prompt">$</span> banchy theme set frost</p>
+          <p><span class="t-ok">[ OK ]</span> theme <span class="t-val">frost</span> loaded</p>
+          <p><span class="t-ok">[ OK ]</span> hyprland reloaded</p>
+          <p><span class="t-ok">[ OK ]</span> waybar restarted</p>
+          <p><span class="t-ok">[ OK ]</span> kitty colors applied</p>
+          <p><span class="t-ok">[ OK ]</span> fuzzel + mako refreshed</p>
+          <p><span class="t-ok">[ OK ]</span> wallpaper updated</p>
+          <p class="t-dim">done in 0.42s — no restart required</p>
+          <p><span class="t-prompt">$</span> <span class="caret" aria-hidden="true"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow" data-en="Everything you need, nothing you don't" data-ru="Всё нужное, ничего лишнего">Everything you need, nothing you don't</span>
+      <h2 data-en="Built as its own system" data-ru="Собственная система, а не сборка">Built as its own system</h2>
+      <p class="section__lead" data-en="Inspired by ideas from Omarchy, but a different architecture underneath: its own CLI, theme engine, boot system and installer — designed to stay fast and predictable for years." data-ru="Вдохновлено идеями Omarchy, но под капотом — другая архитектура: собственные CLI, движок тем, загрузчик и установщик, спроектированные так, чтобы оставаться быстрыми и предсказуемыми годами.">Inspired by ideas from Omarchy, but a different architecture underneath: its own CLI, theme engine, boot system and installer — designed to stay fast and predictable for years.</p>
+    </div>
+
+    <div class="features">
+      <article class="card feature reveal">
+        <div class="feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 6l5 6-5 6" /><path d="M12.5 18H20" /></svg>
+        </div>
+        <h3 data-en="Banchy CLI" data-ru="Banchy CLI">Banchy CLI</h3>
+        <p data-en="One tool for the whole system. Update, diagnose, theme, profile and backup from a single predictable command surface." data-ru="Один инструмент для всей системы. Обновление, диагностика, темы, профили и бэкапы — в едином предсказуемом интерфейсе команд.">One tool for the whole system. Update, diagnose, theme, profile and backup from a single predictable command surface.</p>
+        <ul class="cmds">
+          <li><code>banchy update</code></li>
+          <li><code>banchy doctor</code></li>
+          <li><code>banchy theme set midnight</code></li>
+          <li><code>banchy profile developer</code></li>
+          <li><code>banchy config backup</code></li>
+        </ul>
+      </article>
+
+      <article class="card feature reveal">
+        <div class="feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v16"/><path d="M4.6 9h14.8"/><path d="M4.6 15h14.8"/></svg>
+        </div>
+        <h3 data-en="Theme Engine" data-ru="Движок тем">Theme Engine</h3>
+        <p data-en="Five themes, one command. banchy theme set re-themes Hyprland, Waybar, terminal, launcher, notifications and wallpaper as a single atomic step." data-ru="Пять тем, одна команда. banchy theme set перекрашивает Hyprland, Waybar, терминал, лаунчер, уведомления и обои одной атомарной операцией.">Five themes, one command. banchy theme set re-themes Hyprland, Waybar, terminal, launcher, notifications and wallpaper as a single atomic step.</p>
+        <ul class="chips">
+          <li>Midnight</li><li>Black</li><li>Frost</li><li>Neon</li><li>Minimal</li>
+        </ul>
+      </article>
+
+      <article class="card feature reveal">
+        <div class="feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9h17"/><path d="M8 13.5h8"/><path d="M8 16h5"/></svg>
+        </div>
+        <h3 data-en="Banchy Settings" data-ru="Banchy Settings">Banchy Settings</h3>
+        <p data-en="A GUI for theme, accent color, blur, transparency, gaps, animations, wallpapers, fonts and monitors. Every value is validated and a bad change rolls back automatically." data-ru="Графическое приложение для темы, акцентного цвета, размытия, прозрачности, отступов, анимаций, обоев, шрифтов и мониторов. Каждое значение проверяется, а ошибка автоматически откатывается.">A GUI for theme, accent color, blur, transparency, gaps, animations, wallpapers, fonts and monitors. Every value is validated and a bad change rolls back automatically.</p>
+        <ul class="chips">
+          <li data-en="Validated" data-ru="Валидация">Validated</li>
+          <li data-en="Automatic rollback" data-ru="Автоматический откат">Automatic rollback</li>
+        </ul>
+      </article>
+
+      <article class="card feature reveal">
+        <div class="feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="6" rx="2"/><rect x="3.5" y="13.5" width="17" height="5" rx="2"/><path d="M7 8.5h4"/><path d="M7 16h5"/></svg>
+        </div>
+        <h3 data-en="Banchy Boot" data-ru="Banchy Boot">Banchy Boot</h3>
+        <p data-en="A systemd-boot based bootloader with Start Banchy OS, Previous Kernel and Recovery Mode. Boot safety checks run every time, and a failed update rolls back on its own." data-ru="Загрузчик на основе systemd-boot с записями Start Banchy OS, Previous Kernel и Recovery Mode. Проверки безопасности выполняются при каждой загрузке, а неудачное обновление откатывается автоматически.">A systemd-boot based bootloader with Start Banchy OS, Previous Kernel and Recovery Mode. Boot safety checks run every time, and a failed update rolls back on its own.</p>
+        <ul class="chips">
+          <li>systemd-boot</li>
+          <li data-en="Auto rollback" data-ru="Автооткат">Auto rollback</li>
+        </ul>
+      </article>
+
+      <article class="card feature reveal">
+        <div class="feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v4h-4"/><path d="M9.5 12l2 2 3.5-4"/></svg>
+        </div>
+        <h3 data-en="Safe updates" data-ru="Безопасные обновления">Safe updates</h3>
+        <p data-en="Pre-flight checks for network, disk, pacman and bootloader, config backups, Btrfs snapshots and post-update verification — before you ever see a broken system." data-ru="Предполётная проверка сети, диска, pacman и загрузчика, резервные копии конфигов, снапшоты Btrfs и верификация после обновления — вы не увидите сломанную систему.">Pre-flight checks for network, disk, pacman and bootloader, config backups, Btrfs snapshots and post-update verification — before you ever see a broken system.</p>
+        <ul class="chips">
+          <li data-en="Pre-flight" data-ru="Pre-flight">Pre-flight</li>
+          <li>Btrfs</li>
+          <li data-en="Verification" data-ru="Верификация">Verification</li>
+        </ul>
+      </article>
+
+      <article class="card feature reveal">
+        <div class="feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.8"/></svg>
+        </div>
+        <h3 data-en="Package profiles" data-ru="Профили пакетов">Package profiles</h3>
+        <p data-en="Minimal, Default, Developer, Creator, Gaming and Full. Choose one during install or switch later — the set is added and removed coherently, never piece by piece." data-ru="Minimal, Default, Developer, Creator, Gaming и Full. Выберите профиль при установке или переключитесь позже — набор добавляется и удаляется целиком, а не по частям.">Minimal, Default, Developer, Creator, Gaming and Full. Choose one during install or switch later — the set is added and removed coherently, never piece by piece.</p>
+        <ul class="chips">
+          <li>Minimal</li><li>Default</li><li>Developer</li><li>Creator</li><li>Gaming</li><li>Full</li>
+        </ul>
+      </article>
+
+      <article class="card feature reveal">
+        <div class="feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M7.5 9.5l3 2.5-3 2.5"/><path d="M13 15h4"/></svg>
+        </div>
+        <h3 data-en="Banchy Installer" data-ru="Установщик Banchy">Banchy Installer</h3>
+        <p data-en="A guided TUI installer with ext4 or Btrfs, GPT + UEFI, sensible defaults and automatic post-install verification of the whole system." data-ru="Направляемый TUI-установщик: ext4 или Btrfs, GPT + UFI, разумные значения по умолчанию и автоматическая проверка системы после установки.">A guided TUI installer with ext4 or Btrfs, GPT + UEFI, sensible defaults and automatic post-install verification of the whole system.</p>
+        <ul class="chips">
+          <li>ext4</li><li>Btrfs</li><li>GPT + UEFI</li>
+        </ul>
+      </article>
+
+      <article class="card feature reveal">
+        <div class="feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3.5l7.5 3.2v5c0 4.3-3.1 7.5-7.5 8.8-4.4-1.3-7.5-4.5-7.5-8.8v-5z"/><path d="M9.2 12.2l2 2 3.6-4.1"/></svg>
+        </div>
+        <h3 data-en="Recovery Mode" data-ru="Режим восстановления">Recovery Mode</h3>
+        <p data-en="Filesystem check, bootloader repair, initramfs regeneration, config restore and a root shell — reachable straight from the boot menu, no live USB needed." data-ru="Проверка файловой системы, восстановление загрузчика, пересборка initramfs, возврат конфигов и root-шелл — прямо из меню загрузки, без живой флешки.">Filesystem check, bootloader repair, initramfs regeneration, config restore and a root shell — reachable straight from the boot menu, no live USB needed.</p>
+        <ul class="chips">
+          <li>fsck</li><li>initramfs</li><li data-en="Root shell" data-ru="Root-шелл">Root shell</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="stack">
+  <div class="container stack__inner reveal">
+    <div class="stack__group">
+      <h4 data-en="Desktop" data-ru="Рабочий стол">Desktop</h4>
+      <ul class="stack__list">
+        <li>Hyprland <em data-en="(Wayland)" data-ru="(Wayland)">(Wayland)</em></li>
+        <li>Waybar</li>
+        <li>fuzzel</li>
+        <li>kitty</li>
+        <li>mako</li>
+      </ul>
+    </div>
+    <div class="stack__group">
+      <h4 data-en="Default apps" data-ru="Приложения по умолчанию">Default apps</h4>
+      <ul class="stack__list">
+        <li>Visual Studio Code</li>
+        <li>Chromium</li>
+        <li>Obsidian</li>
+        <li>Thunar</li>
+        <li>neovim</li>
+        <li>git</li>
+        <li>btop</li>
+        <li>fastfetch</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="themes">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow" data-en="Theme engine" data-ru="Движок тем">Theme engine</span>
+      <h2 data-en="Five themes. One command." data-ru="Пять тем. Одна команда.">Five themes. One command.</h2>
+      <p class="section__lead" data-en="Each theme touches every surface of the desktop at once — and every change is applied as one transaction, so your session never ends up half-styled." data-ru="Каждая тема одновременно меняет все поверхности рабочего стола — и применяется одной транзакцией, поэтому сессия никогда не остаётся наполовину перекрашенной.">Each theme touches every surface of the desktop at once — and every change is applied as one transaction, so your session never ends up half-styled.</p>
+    </div>
+
+    <div class="themes">
+      <article class="theme-card reveal" style="--t-accent:#6C8CFF; --t-bg:#0B0F14; --t-surface:#111820; --t-text:#E6EDF3;">
+        <div class="theme-card__bar"><span></span><span></span><span></span></div>
+        <div class="theme-card__body">
+          <div class="swatches" aria-hidden="true">
+            <span style="background:#0B0F14"></span><span style="background:#161E28"></span><span style="background:#6C8CFF"></span><span style="background:#E6EDF3"></span>
+          </div>
+          <h3 data-en="Banchy Midnight" data-ru="Banchy Midnight">Banchy Midnight</h3>
+          <p class="theme-card__code">banchy theme set midnight</p>
+          <p class="theme-card__desc" data-en="Deep blue-black surfaces with a calm indigo accent." data-ru="Тёмно-синие поверхности со спокойным индиго-акцентом.">Deep blue-black surfaces with a calm indigo accent.</p>
+        </div>
+      </article>
+
+      <article class="theme-card reveal" style="--t-accent:#E2E8F0; --t-bg:#000000; --t-surface:#0A0A0A; --t-text:#FAFAFA;">
+        <div class="theme-card__bar"><span></span><span></span><span></span></div>
+        <div class="theme-card__body">
+          <div class="swatches" aria-hidden="true">
+            <span style="background:#000000"></span><span style="background:#141414"></span><span style="background:#E2E8F0"></span><span style="background:#FAFAFA"></span>
+          </div>
+          <h3 data-en="Banchy Black" data-ru="Banchy Black">Banchy Black</h3>
+          <p class="theme-card__code">banchy theme set black</p>
+          <p class="theme-card__desc" data-en="True black OLED-friendly theme, almost no color at all." data-ru="Настоящий чёрный, бережный к OLED, почти без цвета.">True black OLED-friendly theme, almost no color at all.</p>
+        </div>
+      </article>
+
+      <article class="theme-card reveal" style="--t-accent:#88C0D0; --t-bg:#0E1620; --t-surface:#14202C; --t-text:#E7EEF5;">
+        <div class="theme-card__bar"><span></span><span></span><span></span></div>
+        <div class="theme-card__body">
+          <div class="swatches" aria-hidden="true">
+            <span style="background:#0E1620"></span><span style="background:#1C2C3A"></span><span style="background:#88C0D0"></span><span style="background:#E7EEF5"></span>
+          </div>
+          <h3 data-en="Banchy Frost" data-ru="Banchy Frost">Banchy Frost</h3>
+          <p class="theme-card__code">banchy theme set frost</p>
+          <p class="theme-card__desc" data-en="Cool slate blues with a glacial cyan accent." data-ru="Холодные сине-серые тона с леденцовым цианом.">Cool slate blues with a glacial cyan accent.</p>
+        </div>
+      </article>
+
+      <article class="theme-card reveal" style="--t-accent:#3DFF9E; --t-bg:#06110C; --t-surface:#0B1A12; --t-text:#DFFFF0;">
+        <div class="theme-card__bar"><span></span><span></span><span></span></div>
+        <div class="theme-card__body">
+          <div class="swatches" aria-hidden="true">
+            <span style="background:#06110C"></span><span style="background:#0F241A"></span><span style="background:#3DFF9E"></span><span style="background:#DFFFF0"></span>
+          </div>
+          <h3 data-en="Banchy Neon" data-ru="Banchy Neon">Banchy Neon</h3>
+          <p class="theme-card__code">banchy theme set neon</p>
+          <p class="theme-card__desc" data-en="High-energy green on near-black, built to glow." data-ru="Энергичный зелёный на почти чёрном, задуман сиять.">High-energy green on near-black, built to glow.</p>
+        </div>
+      </article>
+
+      <article class="theme-card reveal" style="--t-accent:#A3A3A3; --t-bg:#101010; --t-surface:#171717; --t-text:#F5F5F5;">
+        <div class="theme-card__bar"><span></span><span></span><span></span></div>
+        <div class="theme-card__body">
+          <div class="swatches" aria-hidden="true">
+            <span style="background:#101010"></span><span style="background:#1F1F1F"></span><span style="background:#A3A3A3"></span><span style="background:#F5F5F5"></span>
+          </div>
+          <h3 data-en="Banchy Minimal" data-ru="Banchy Minimal">Banchy Minimal</h3>
+          <p class="theme-card__code">banchy theme set minimal</p>
+          <p class="theme-card__desc" data-en="Pure grayscale. Nothing between you and the work." data-ru="Чистая серая шкала. Между вами и работой — ничего.">Pure grayscale. Nothing between you and the work.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="stability">
+  <div class="container">
+    <div class="stability__inner reveal">
+      <span class="eyebrow" data-en="Stability principle" data-ru="Принцип стабильности">Stability principle</span>
+      <p class="stability__line">
+        <span data-en="Validation" data-ru="Валидация">Validation</span>
+        <span class="op">+</span>
+        <span data-en="Backup" data-ru="Резервная копия">Backup</span>
+        <span class="op">+</span>
+        <span data-en="Fallback" data-ru="Резервный вариант">Fallback</span>
+        <span class="op">+</span>
+        <span data-en="Rollback" data-ru="Откат">Rollback</span>
+        <span class="tail" data-en="for every critical change." data-ru="для каждого критического изменения.">for every critical change.</span>
+      </p>
+      <p class="stability__sub" data-en="Never beauty at the cost of stability." data-ru="Красота никогда не важнее стабильности.">Never beauty at the cost of stability.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="download">
+  <div class="container">
+    <div class="download reveal">
+      <div class="download__copy">
+        <span class="eyebrow" data-en="Get Banchy OS" data-ru="Скачать Banchy OS">Get Banchy OS</span>
+        <h2 data-en="Download the ISO" data-ru="Скачать ISO">Download the ISO</h2>
+        <p class="section__lead" data-en="Boot it from a USB stick, run the guided installer, and you are on a rolling-release Arch desktop with everything already wired together." data-ru="Запустите с USB-флешки, пройдите направленную установку — и получите скользящий Arch-рабочий стол, где всё уже связано воедино.">Boot it from a USB stick, run the guided installer, and you are on a rolling-release Arch desktop with everything already wired together.</p>
+
+        <div class="download__meta">
+          <div class="meta-row"><span data-en="File" data-ru="Файл">File</span><code>banchy-os-x86_64.iso</code></div>
+          <div class="meta-row"><span data-en="Latest release" data-ru="Последний релиз">Latest release</span><code id="release-version" data-en="latest" data-ru="последняя">latest</code></div>
+          <div class="meta-row"><span data-en="SHA-256" data-ru="SHA-256">SHA-256</span><a id="sha256-link" href="https://github.com/pinkyguy2323/banchy-os/releases" target="_blank" rel="noopener"><code id="sha256-text" data-en="see release assets" data-ru="см. ассеты релиза">see release assets</code></a></div>
+          <div class="meta-row"><span data-en="Install targets" data-ru="Цели установки">Install targets</span><code>UEFI, ext4 &amp; Btrfs</code></div>
+        </div>
+
+        <div class="download__cta">
+          <a class="btn btn--primary btn--lg" href="https://github.com/pinkyguy2323/banchy-os/releases/latest/download/banchy-os-x86_64.iso" data-en="Download ISO" data-ru="Скачать ISO">Download ISO</a>
+          <a class="btn btn--ghost" href="https://github.com/pinkyguy2323/banchy-os/releases" target="_blank" rel="noopener" data-en="All releases" data-ru="Все релизы">All releases</a>
+        </div>
+
+        <p class="download__req" data-en="Requirements: 4 CPU cores, 4 GB RAM, 40 GB disk." data-ru="Системные требования: 4 ядра ЦП, 4 ГБ ОЗУ, 40 ГБ диска.">Requirements: 4 CPU cores, 4 GB RAM, 40 GB disk.</p>
+      </div>
+
+      <div class="download__panel" aria-hidden="true">
+        <div class="panel__label">banchy doctor</div>
+        <ul class="checklist">
+          <li><span class="t-ok">[ OK ]</span> network reachable</li>
+          <li><span class="t-ok">[ OK ]</span> disk space 42.1G free</li>
+          <li><span class="t-ok">[ OK ]</span> pacman database synced</li>
+          <li><span class="t-ok">[ OK ]</span> systemd-boot entries intact</li>
+          <li><span class="t-ok">[ OK ]</span> btrfs snapshot present</li>
+          <li><span class="t-warn">[ OK ]</span> update chain verified</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="quickstart">
+  <div class="container quickstart">
+    <div class="quickstart__copy reveal">
+      <span class="eyebrow" data-en="After install" data-ru="После установки">After install</span>
+      <h2 data-en="Quick start" data-ru="Быстрый старт">Quick start</h2>
+      <p class="section__lead" data-en="Check the system, then switch to the profile that matches your work. Everything else stays out of the way." data-ru="Проверьте систему и переключитесь на профиль под вашу задачу. Остальное не будет вам мешать.">Check the system, then switch to the profile that matches your work. Everything else stays out of the way.</p>
+      <a class="link-arrow" href="https://github.com/pinkyguy2323/banchy-os/tree/main/docs" target="_blank" rel="noopener" data-en="Read the docs" data-ru="Открыть документацию">Read the docs</a>
+    </div>
+    <div class="term term--sm reveal" data-delay="100">
+      <div class="term__bar">
+        <span class="term__dot"></span><span class="term__dot"></span><span class="term__dot"></span>
+        <span class="term__title">kitty</span>
+      </div>
+      <div class="term__body">
+        <p><span class="t-prompt">$</span> banchy doctor</p>
+        <p><span class="t-ok">[ OK ]</span> system healthy — 0 issues</p>
+        <p>&nbsp;</p>
+        <p><span class="t-prompt">$</span> banchy profile developer</p>
+        <p><span class="t-ok">[ OK ]</span> profile <span class="t-val">developer</span> applied</p>
+        <p><span class="t-ok">[ OK ]</span> 24 packages installed, 0 removed</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a class="brand" href="#top" aria-label="Banchy OS home">
+        <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="0.75" y="0.75" width="22.5" height="22.5" rx="6.5" fill="#111820" stroke="#243040" stroke-width="1.5"/>
+          <rect x="5.5" y="4.4" width="2" height="15.2" rx="1" fill="#E6EDF3"/>
+          <path d="M7.5 5.4H14.3A2.8 2.8 0 0 1 14.3 11H7.5" fill="none" stroke="#6C8CFF" stroke-width="2"/>
+          <path d="M7.5 13H14.7A2.8 2.8 0 0 1 14.7 18.6H7.5" fill="none" stroke="#46D6C6" stroke-width="2"/>
+        </svg>
+        <span class="brand__name">Banchy<span class="brand__accent">OS</span></span>
+      </a>
+      <p data-en="An independent, Arch Linux based rolling-release desktop distribution." data-ru="Независимый настольный дистрибутив на базе Arch Linux со скользящим релизом.">An independent, Arch Linux based rolling-release desktop distribution.</p>
+    </div>
+
+    <nav class="footer__col" aria-label="Product">
+      <h4 data-en="Product" data-ru="Продукт">Product</h4>
+      <a href="#features" data-en="Features" data-ru="Возможности">Features</a>
+      <a href="#themes" data-en="Themes" data-ru="Темы">Themes</a>
+      <a href="#download" data-en="Download" data-ru="Скачать">Download</a>
+      <a href="https://github.com/pinkyguy2323/banchy-os/releases" target="_blank" rel="noopener" data-en="Releases" data-ru="Релизы">Releases</a>
+    </nav>
+
+    <nav class="footer__col" aria-label="Resources">
+      <h4 data-en="Resources" data-ru="Ресурсы">Resources</h4>
+      <a href="https://github.com/pinkyguy2323/banchy-os/tree/main/docs" target="_blank" rel="noopener" data-en="Documentation" data-ru="Документация">Documentation</a>
+      <a href="https://github.com/pinkyguy2323/banchy-os" target="_blank" rel="noopener" data-en="Repository" data-ru="Репозиторий">Repository</a>
+      <a href="https://github.com/omacom/omarchy" target="_blank" rel="noopener">Omarchy</a>
+      <a href="https://archlinux.org" target="_blank" rel="noopener">Arch Linux</a>
+    </nav>
+  </div>
+
+  <div class="container footer__bottom">
+    <p data-en="Built on Arch Linux · Inspired by Omarchy · MIT License" data-ru="На базе Arch Linux · Вдохновлено Omarchy · Лицензия MIT">Built on Arch Linux · Inspired by Omarchy · MIT License</p>
+    <p class="footer__fine" data-en="Banchy OS is an independent project and is not affiliated with or endorsed by the Arch Linux project." data-ru="Banchy OS — независимый проект, не связан с проектом Arch Linux и не поддерживается им.">Banchy OS is an independent project and is not affiliated with or endorsed by the Arch Linux project.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
